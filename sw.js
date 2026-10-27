@@ -14,7 +14,15 @@ const APP_FILES = [
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then((cache) => cache.addAll(APP_FILES))
+      .then(async (cache) => {
+        for (const file of APP_FILES) {
+          try {
+            await cache.add(file);
+          } catch (err) {
+            console.warn("Could not cache file:", file);
+          }
+        }
+      })
       .then(() => self.skipWaiting())
   );
 });
@@ -30,7 +38,7 @@ self.addEventListener("activate", (event) => {
           )
           .map((key) => caches.delete(key))
       )
-    ).then(() => self.clients.claim())
+    ).then(() => clients.claim())
   );
 });
 
@@ -42,10 +50,10 @@ self.addEventListener("fetch", (event) => {
 
   if (event.request.mode === "navigate") {
     event.respondWith(
-      fetch(event.request).catch(async () =>
-        (await caches.match(event.request)) ||
-        (await caches.match("./index.html"))
-      )
+      fetch(event.request).catch(async () => {
+        const cached = await caches.match(event.request);
+        return cached || (await caches.match("./index.html"));
+      })
     );
     return;
   }
