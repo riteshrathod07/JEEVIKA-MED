@@ -1,0 +1,12 @@
+{
+  "id": "./index.html",
+  "name": "Jeevika Med",
+  "short_name": "Jeevika Med",
+  "description": "Your personal medical study companion",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff5f8",
+  "theme_color": "#d985a5"
+}

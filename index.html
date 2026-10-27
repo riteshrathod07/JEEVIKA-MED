@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff5f8">
+    <title>JEEVIKA MED🩺</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#d985a5">
+</head>
+<body>
+    <header class="topbar">
+        <a href="index.html" class="brand">JEEVIKA MED<span> 🩺</span></a>
+        <span class="header-note">I LOVE YOU ALOT PRINCESS</span>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <p class="eyebrow">BETUU JI!! PADHAI KARO AB</p>
+            <h1>DOCTORRRR JEEVIKAAAAA <span>🩺</span></h1>
+            <p class="subtitle">
+                TU NA APRON ME BHT JACHEGII YK LADLI CHASHMISH 😘
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">letss startttt 💞</p>
+                    <h2>BABYY TERE ENEMIES KO DHISHOOM DHISOOM KAR😙</h2>
+                </div>
+                <span class="soft-label">Main doctor banugi rityaa</span>
+            </div>
+
+            <div class="subject-grid">
+                <a href="physics.html" class="subject-card physics-card">
+                    <span class="subject-symbol">φ</span>
+                    <h3>Physics</h3>
+                    <p>ENEMY NO.1💀</p>
+                    <span class="card-link">Explore chapters →</span>
+                </a>
+
+                <a href="chemistry.html" class="subject-card chemistry-card">
+                    <span class="subject-symbol">✳</span>
+                    <h3>Chemistry</h3>
+                    <p>ENEMY NO.2</p>
+                    <span class="card-link">Explore chapters →</span>
+                </a>
+
+                <a href="biology.html" class="subject-card biology-card">
+                    <span class="subject-symbol">❀</span>
+                    <h3>Biology</h3>
+                    <p>ENEMY NO.3</p>
+                    <span class="card-link">Explore chapters →</span>
+                </a>
+            </div>
+        </section>
+
+        <div class="dashboard-grid">
+            <section class="panel">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">muahhhh jaaanuuu</p>
+                        <h2>Today's targets</h2>
+                    </div>
+                    <span class="decorative-heart">♡</span>
+                </div>
+
+                <form id="target-form" class="target-form">
+                    <label class="sr-only" for="target-input">New study target</label>
+                    <input
+                        id="target-input"
+                        type="text"
+                        placeholder="KY KAREGA MERAA BACHAA AAJ HUH?"
+                        maxlength="150"
+                        required
+                    >
+                    <button type="submit" class="button">Add target +</button>
+                </form>
+
+                <ul id="target-list" class="target-list">
+                    <!-- Daily targets will be added here by script.js. -->
+                </ul>
+
+                <p id="target-summary" class="small-note" aria-live="polite">
+                    BABYY TU KAR LEGI YK 
+                </p>
+            </section>
+
+            <section class="panel timer-panel">
+                <p class="eyebrow">YOUR FOCUS CORNER</p>
+                <h2>DEKHTE HAI KITNAA PADHEGII</h2>
+                <p class="subtitle">TU PADH TOH SAHII.</p>
+
+                <div id="timer-display" class="timer-display"
+                     role="timer" aria-live="off">00:00:00</div>
+
+                <p id="timer-message" class="timer-message" aria-live="polite">
+                    I LOVE YOU BABYGIRLLL. ♡
+                </p>
+
+                <div class="timer-controls">
+                    <button type="button" id="timer-start" class="button">
+                        Start
+                    </button>
+                    <button type="button" id="timer-pause"
+                            class="button button-light" disabled>
+                        Pause
+                    </button>
+                    <button type="button" id="timer-reset"
+                            class="text-button">
+                        Reset
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <section class="quote-card">
+            <span class="quote-mark">“</span>
+            <p id="daily-message">
+                BABYY TU ACHA KAREN YA BURA KAREN MAIN HAMESHA TERE SATH RAHUGAA AUR UTNAA HI PROUD FEEL HOGAA MUJHE TUZHE LEKARR
+            </p>
+            <span class="quote-caption">ILU ILU DOCTORR JEEVIKAAA♡</span>
+        </section>
+
+        <section class="section library-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">ALL YOUR RESOURCES</p>
+                    <h2>Study library</h2>
+                </div>
+            </div>
+            <p class="subtitle">
+                Keep formula sheets, revision notes, and other study resources
+                together in one place.
+            </p>
+            <a href="assets/PHYSICS MED EASY 2.0 ❤️✨ (1)_watermark (1).pdf" class="button button-light">
+                Physics class notes 
+            </a>
+            <br><br>
+            <a href="assets/BOTANY MED EASY.pdf" class="button button-light">
+                Botany class notes
+            </a>
+            <br><br>
+            <a href="assets/Med eass.pdf" class="button button-light">
+                Zoology class notes
+            </a>
+            <br><br>
+            <a href="assets/CHEMISTRY MED EASY.pdf" class="button button-light">
+                Chemistry class notes 
+            </a>
+            <br><br>
+            <a href="assets/PW Chemistry 7 YEAR PYQS by @studyversetg (3).pdf" class="button button-light">
+                JEE Mains Chemistry pyq
+            </a>
+            <br><br>
+            <a href="assets/PW_7_years_JEE_Mains_PYQ'S_Physics_by_@studyversetgHD_Quality.pdf" class="button button-light">
+                JEE Mains Physics pyq
+            </a>
+            <!-- Add individual PDF links here when your files are ready. -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        Made with lots of love, for our dream. <span>♡</span>
+    </footer>
+</body>
+</html>
