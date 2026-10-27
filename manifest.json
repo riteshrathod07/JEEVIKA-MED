@@ -1,5 +1,4 @@
 {
-  "id": "./index.html",
   "name": "Jeevika Med",
   "short_name": "Jeevika Med",
   "description": "Your personal medical study companion",
@@ -8,19 +7,19 @@
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff5f8",
-  "theme_color": "#d985a5"
-  "icons":[
+  "theme_color": "#d985a5",
+  "icons": [
     {
-      "src":"assets/icon-192.png",
-      "sizes":"192x192",
-      "type":"image/png",
-      "purpose":"any maskable"
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src":"assets/icon-512.png",
-      "sizes":"512x512",
-      "type":"image/png",
-      "purpose":"any maskable"
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
