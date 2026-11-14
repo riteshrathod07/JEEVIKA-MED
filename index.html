@@ -15,6 +15,26 @@
 <link rel="icon" type="image/png" href="assets/icon-192.png">
 </head>
 <body>
+    <div id="lock-screen">
+  <div class="lock-card">
+    <div class="lock-icon">🔐</div>
+    <h1>Welcome Back ❤️</h1>
+    <p>This little space is just for you.</p>
+
+    <input
+      type="password"
+      id="passcode"
+      placeholder="Enter your PIN"
+      maxlength="4"
+      inputmode="numeric"
+      autocomplete="off"
+    />
+
+    <button onclick="unlockApp()">Unlock ❤️</button>
+
+    <p id="error-message"></p>
+  </div>
+</div>
     <header class="topbar">
         <a href="index.html" class="brand">JEEVIKA MED<span> 🩺</span></a>
         <span class="header-note">I LOVE YOU ALOT PRINCESS</span>
