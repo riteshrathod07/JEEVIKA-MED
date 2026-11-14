@@ -381,34 +381,3 @@ if ("serviceWorker" in navigator) {
       });
   });
 }
-
-
-// Change this to your girlfriend's PIN
-const CORRECT_PIN = "0212";
-
-function unlockApp() {
-  const enteredPin = document.getElementById("passcode").value;
-  const error = document.getElementById("error-message");
-
-  if (enteredPin === CORRECT_PIN) {
-    document.body.classList.add("unlocked");
-
-    document.getElementById("lock-screen").style.display = "none";
-
-    error.textContent = "";
-  } else {
-    error.textContent = "Oops! Wrong PIN. Try again ❤️";
-
-    document.getElementById("passcode").value = "";
-  }
-}
-
-// Allow Enter key to unlock
-document.getElementById("passcode").addEventListener(
-  "keydown",
-  function(event) {
-    if (event.key === "Enter") {
-      unlockApp();
-    }
-  }
-);
